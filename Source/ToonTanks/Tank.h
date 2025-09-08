@@ -15,6 +15,10 @@ public:
 	virtual void Tick(float DeltaTime) override;
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	void HandleDestruction();
+
+	APlayerController* GetTankPlayerControllerPointer() const { return TankPlayerControllerPointer; }
+
 protected:
 	virtual void BeginPlay() override;
 
@@ -34,5 +38,5 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Movement")
 	float RotationSpeed = 200.f;
 
-	APlayerController* PlayerControllerPointer;
+	APlayerController* TankPlayerControllerPointer;
 };

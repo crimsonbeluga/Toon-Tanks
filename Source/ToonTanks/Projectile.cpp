@@ -46,7 +46,7 @@ void AProjectile::OnHit(
 	AActor* OtherActor,                    // The actor that we collided with
 	UPrimitiveComponent* HitActorComponent, // The specific component on the other actor we hit
 	FVector ImpactForce,                 // The impulse/force applied by the hit
-	const FHitResult&
+	const FHitResult& Hit
 )
 
 {
