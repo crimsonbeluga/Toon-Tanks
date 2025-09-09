@@ -39,4 +39,7 @@ private:
 	float RotationSpeed = 200.f;
 
 	APlayerController* TankPlayerControllerPointer;
+
+	
+
 };

@@ -50,5 +50,9 @@ void ABasePawn::Fire()
 
 void ABasePawn::HandleDestruction()
 {
+	if (DeathParticles)
+	{
+		UGameplayStatics::SpawnEmitterAtLocation(this, DeathParticles, ABasePawn::GetActorLocation(), ABasePawn::GetActorRotation());
 
+	}
 }

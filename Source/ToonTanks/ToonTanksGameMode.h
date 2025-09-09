@@ -25,6 +25,9 @@ protected:
 	UFUNCTION(BlueprintImplementableEvent)
 	void StartGame();
 
+	UFUNCTION(BlueprintImplementableEvent)
+	void EndGame(bool bWonGame);
+
 private:
 	 
 	class ATank* Tank;
@@ -33,6 +36,9 @@ private:
 	float StartDelay = 3.f; 
 	 
 	void HandleGameStart();
+
+	int32 TargetTowers = 0;
+	int32 TrackTowerCount();
 
 	
 };
