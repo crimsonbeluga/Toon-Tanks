@@ -1,4 +1,4 @@
-# 🪖 Tomb Tanks
+# 🪖 Toon Tanks
 
 A fast-paced survival arena game where you control a tank and battle endless waves of enemy tanks, turrets, and other deadly opponents. Collect power-ups and survive as long as possible.
 
