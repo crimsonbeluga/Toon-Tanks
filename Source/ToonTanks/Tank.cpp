@@ -79,5 +79,5 @@ void ATank::HandleDestruction()
 
 	SetActorTickEnabled(false);
 
-	
+	bAlive = false;
 }

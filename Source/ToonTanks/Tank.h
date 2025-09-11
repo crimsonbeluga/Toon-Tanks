@@ -19,6 +19,8 @@ public:
 
 	APlayerController* GetTankPlayerControllerPointer() const { return TankPlayerControllerPointer; }
 
+
+	bool bAlive = true;
 protected:
 	virtual void BeginPlay() override;
 
