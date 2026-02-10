@@ -19,6 +19,9 @@ public:
 
 	APlayerController* GetTankPlayerControllerPointer() const { return TankPlayerControllerPointer; }
 
+	UFUNCTION(BlueprintImplementableEvent, Category = "Weapon")
+	void Fire();
+
 
 	bool bAlive = true;
 protected:
@@ -27,6 +30,7 @@ protected:
 private:
 	void Move(float Value);
 	void Turn(float Value);
+
 
 	UPROPERTY(VisibleAnywhere, Category = "Components")
 	class USpringArmComponent* SpringArm;

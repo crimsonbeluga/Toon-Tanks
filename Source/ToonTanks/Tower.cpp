@@ -53,7 +53,7 @@ void ATower::CheckFireCondition()
     }
     if (InFireRange() && Tank->bAlive)
     {
-        Fire();
+    
     }
     
 }
