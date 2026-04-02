@@ -8,8 +8,8 @@ public class ToonTanksTarget : TargetRules
 	public ToonTanksTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
-		DefaultBuildSettings = BuildSettingsVersion.V5;
+        DefaultBuildSettings = BuildSettingsVersion.V6;
 
-		ExtraModuleNames.AddRange( new string[] { "ToonTanks" } );
+        ExtraModuleNames.AddRange( new string[] { "ToonTanks" } );
 	}
 }
